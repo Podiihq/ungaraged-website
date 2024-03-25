@@ -12,15 +12,15 @@ const HomePage = () => {
             <NavBar />
             <section className="relative">
                 <div className="relative">
-                    <img src={Hero} alt="" className="object-cover w-full -z-10 hidden lg:block" />
-                    <img src={HeroMobile} alt="" className="object-cover w-full -z-10 lg:hidden" />
-                    <div className="absolute left-0 bottom-[40%] lg:left-[5%] lg:bottom-[40%] md:px-24 lg:px-8 italic text-white">
-                        <div className="z-50 lg:w-1/2 mt-32 px-4">
+                    <img src={Hero} alt="" className="object-cover w-full -z-10 hidden md:block" />
+                    <img src={HeroMobile} alt="" className="object-cover w-full -z-10 md:hidden h-screen" />
+                    <div className="absolute bottom-[40%] left-0 lg:left-[5%] 3xl:left-[20%] md:px-24 lg:px-8 italic text-white">
+                        <div className="z-50 md:w-4/5 lg:w-1/2 mt-32 px-4 md:px-0">
                             <p className="font-bold ">Lets Tune Your Car</p>
-                            <p className="text-[44px] lg:text-[96px] font-[900] uppercase leading-none">Speed, <span className="text-[#FE5C43]">Power </span>Performance.</p>
-                            <p className="lg:px-0 text-sm lg:text-base mt-4">Experience the exhilaration of driving beyond limits, where power, speed, and performance converge to redefine what's possible on the road, unleashing the full potential of your vehicle and leaving ordinary behind.</p>
+                            <p className="text-[44px] lg:text-[64px] 2xl:text-[96px] font-[900] uppercase leading-none">Speed, <span className="text-[#FE5C43]">Power </span>Performance.</p>
+                            <p className="lg:px-0 text-sm lg:text-base mt-4 ">Experience the exhilaration of driving beyond limits, where power, speed, and performance converge to redefine what's possible on the road, unleashing the full potential of your vehicle and leaving ordinary behind.</p>
                         </div>
-                        <div className="flex lg:mt-8 px-4 mt-4">
+                        <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
                             <a href="#" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-white -skew-x-[15deg] transform"></span>
                                 <span className="-skew-x-[15deg] transform flex items-center gap-2 bg-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition duration-100">
@@ -37,7 +37,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
                 <div className="">
                     <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
                     {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
@@ -68,7 +68,7 @@ export const NavBar = () => {
                     </div>
                     <div className="flex items-center gap-2">
                         <SearchIcon />
-                        <p className="text-sm hidden lg:blok">Search your car</p>
+                        <p className="text-sm hidden md:block">Search your car</p>
                     </div>
                 </div>
             </nav>
