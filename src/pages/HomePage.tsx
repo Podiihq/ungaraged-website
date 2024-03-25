@@ -1,7 +1,9 @@
 import Logo from "../assets/Logo/Logo.svg"
-import { ArrowForward, Mouse, SearchIcon } from "../components/Icons"
+import { ArrowForward, SearchIcon } from "../components/Icons"
 import Hero from "../assets/images/hero/Hero.png"
 import HeroMobile from "../assets/images/hero/HeroMobile.png"
+import MouseSvg from "../assets/images/icons/mouse.svg"
+import HeroVideo from "../assets/videos/vid-2.mp4"
 
 
 const HomePage = () => {
@@ -31,8 +33,19 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="flex justify-center absolute bottom-20 left-[50%]">
-                        <Mouse />
+                        <img src={MouseSvg} alt="" className="w-8" />
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className="">
+                    <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
+                    {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
+                </div>
+            </section>
+            <section>
+                <div>
+
                 </div>
             </section>
         </div>
