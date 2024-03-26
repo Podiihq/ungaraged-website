@@ -8,9 +8,9 @@ export const NavBar = () => {
                 <div className="flex justify-between items-center">
                     <img src={Logo} alt="" className="w-32 lg:w-auto" />
                     <div className="lg:flex items-center gap-6 text-sm hidden">
-                        <a href="">Services</a>
-                        <a href="">About Us</a>
-                        <a href="">Contact Us</a>
+                        <a href="" className="hover:underline hover:text-[#FE5C43]">Services</a>
+                        <a href="" className="hover:underline hover:text-[#FE5C43]">About Us</a>
+                        <a href="" className="hover:underline hover:text-[#FE5C43]">Contact Us</a>
                     </div>
                     <div className="flex items-center gap-2">
                         <SearchIcon />
