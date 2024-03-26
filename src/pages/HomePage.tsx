@@ -18,6 +18,8 @@ import part2 from "../assets/parts/2.png"
 import part3 from "../assets/parts/3.png"
 import part4 from "../assets/parts/4.png"
 import part5 from "../assets/parts/5.png"
+import { Testimonial } from "../components/Testimonials"
+import { AllFAQs } from "../components/FAQs"
 
 
 const HomePage = () => {
@@ -49,7 +51,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="flex justify-center absolute bottom-20 left-[50%]">
-                        <img src={MouseSvg} alt="" className="w-8" />
+                        <img src={MouseSvg} alt="" className="w-8 animate-bounce" />
                     </div>
                 </div>
             </section>
@@ -231,27 +233,17 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            <section className="px-4 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-10 italic">
+                <div className="lg:w-1/2">
+                    <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">Frequently Asked Questions - <span className="text-[#FE5C43]">FAQs</span></p>
+                </div>
+                <div>
+                    <AllFAQs />
+                </div>
+            </section>
         </div>
     )
 }
 
 export default HomePage
-
-
-interface TestimonialProps {
-    userName: string;
-    statement: string;
-}
-
-export const Testimonial = (props: TestimonialProps) => {
-    return (
-        <div className="flex mx-2 max-w-xs md:max-w-sm">
-            <div className="bg-[#141414] p-6 border border-[#3C3C3C] rounded-xl">
-                <p>{props.userName}</p>
-                <p className="mt-4 text-[#ABABAB]">"{props.statement}"</p>
-            </div>
-        </div>
-
-    )
-}
 
