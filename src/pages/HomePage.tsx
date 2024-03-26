@@ -3,6 +3,8 @@ import Hero from "../assets/images/hero/Hero.png"
 import HeroMobile from "../assets/images/hero/HeroMobile.png"
 import MouseSvg from "../assets/images/icons/mouse.svg"
 import HeroVideo from "../assets/videos/vid-2.mp4"
+import HeroVideo2 from "../assets/videos/vid-4.mp4"
+import HeroVideo3 from "../assets/videos/vid-6.mp4"
 import { NavBar } from "../components/NavBar"
 import Service2 from "../assets/services/service2.png"
 import Service4 from "../assets/services/service4.png"
@@ -175,6 +177,25 @@ const HomePage = () => {
                 </div>
 
             </section>
+            <div className="bg-[#141414]">
+                <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+                    <div className="italic lg:w-1/2 mx-auto mb-8 lg:mb-16">
+                        <div>
+                            <p className="font-bold uppercase text-[#FE5C43] mb-4 text-center">Events</p>
+                            <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">Car Racing</p>
+                        </div>
+                        <div className="mt-4">
+                            <p className="text-[#ABABAB] text-center">
+                                Expand your horizons with our expert car we handle every step of the import process, Let us turn your global automotive aspirations into reality, one import at a time
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <video autoPlay muted loop src={HeroVideo2} className="w-full h-[340px] md:h-[500px] lg:h-full"></video>
+                        <video autoPlay muted loop src={HeroVideo3} className="w-full h-[340px] md:h-[500px] lg:h-full"></video>
+                    </div>
+                </section>
+            </div>
 
         </div>
     )
