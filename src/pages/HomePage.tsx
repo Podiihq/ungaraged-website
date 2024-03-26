@@ -20,6 +20,8 @@ import part4 from "../assets/parts/4.png"
 import part5 from "../assets/parts/5.png"
 import { Testimonial } from "../components/Testimonials"
 import { AllFAQs } from "../components/FAQs"
+import CarDisplay from "../assets/images/car-display.png"
+import Footer from "../components/Footer"
 
 
 const HomePage = () => {
@@ -192,9 +194,9 @@ const HomePage = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex">
-                        <video autoPlay muted loop src={HeroVideo2} className="w-full h-[340px] md:h-[500px] lg:h-full"></video>
-                        <video autoPlay muted loop src={HeroVideo3} className="w-full h-[340px] md:h-[500px] lg:h-full"></video>
+                    <div className="flex max-w-screen">
+                        <video autoPlay muted loop src={HeroVideo2} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
+                        <video autoPlay muted loop src={HeroVideo3} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
                     </div>
                 </section>
             </div>
@@ -240,6 +242,37 @@ const HomePage = () => {
                 <div>
                     <AllFAQs />
                 </div>
+            </section>
+            <section className="bg-white text-black py-20">
+                <div>
+                    <div className="italic px-4">
+                        <div>
+                            <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">DRIVE BEYOND LIMITS</p>
+                        </div>
+                        <div className="mt-4 text-center">
+                            <p className="lg:w-1/2 mx-auto text-[#141414]">
+                                From navigating international regulations to arranging safe and efficient transport, we handle every step of the import process, so you can focus on enjoying your new ride. Let us turn your global automotive aspirations into reality, one import at a time
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex lg:mt-8 mt-4 justify-center">
+                        <a href="#" className="relative">
+                            <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                            <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-white border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                <div className="skew-x-[10deg] text-[#FE5C43]">
+                                    <ArrowForward />
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+                    <div className="mt-8">
+                        <img src={CarDisplay} alt="" />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <Footer />
             </section>
         </div>
     )
