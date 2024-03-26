@@ -5,6 +5,7 @@ import MouseSvg from "../assets/images/icons/mouse.svg"
 import HeroVideo from "../assets/videos/vid-2.mp4"
 import { NavBar } from "../components/NavBar"
 import Service2 from "../assets/services/service2.png"
+import Service4 from "../assets/services/service4.png"
 
 
 const HomePage = () => {
@@ -84,6 +85,22 @@ const HomePage = () => {
                             </a>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="italic">
+                <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+                    <div>
+                        <div>
+                            <p className="font-bold uppercase text-[#FE5C43] mb-4 text-center">Service 04</p>
+                            <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none text-center">Expert Car <br /> Importation Services </p>
+                        </div>
+                        <div className="mt-4 text-center">
+                            <p className="md:w-1/2 mx-auto">
+                                Expand your horizons with our expert car importation services, designed to bring your desired vehicle to your doorstep with ease. From navigating international regulations to arranging safe and efficient transport, we handle every step of the import process, so you can focus on enjoying your new ride. Let us turn your global automotive aspirations into reality, one import at a time
+                            </p>
+                        </div>
+                    </div>
+                    <img src={Service4} alt="" className="w-full " />
                 </div>
             </section>
         </div>
