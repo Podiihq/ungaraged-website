@@ -26,10 +26,10 @@ import Footer from "../components/Footer"
 
 const HomePage = () => {
     return (
-        <div className="bg-black text-white">
+        <div className="bg-black text-white scroll-smooth">
             <NavBar />
             <section className="relative">
-                <div className="relative">
+                <div className="relative" id="top">
                     <img src={Hero} alt="" className="object-cover w-full -z-10 hidden md:block h-screen" />
                     <img src={HeroMobile} alt="" className="object-cover w-full -z-10 md:hidden h-screen" />
                     <div className="absolute bottom-[40%] left-0 lg:left-[5%] 3xl:left-[20%] md:px-24 lg:px-8 italic text-white">
@@ -41,7 +41,7 @@ const HomePage = () => {
                             <p className="lg:px-0 text-sm lg:text-base mt-4 text-center md:text-left text-[#ABABAB]">Experience the exhilaration of driving beyond limits, where power, speed, and performance converge to redefine what's possible on the road, unleashing the full potential of your vehicle and leaving ordinary behind.</p>
                         </div>
                         <div className="flex justify-center md:justify-start lg:mt-8 px-4 md:px-0 mt-4">
-                            <a href="#" className="relative">
+                            <a href="/contact" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                                 <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
                                     <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
@@ -57,14 +57,14 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+            <section className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
                 <div className="">
                     <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
                     {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
                 </div>
             </section>
 
-            <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+            <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20" id="services">
                 <div className="italic grid lg:grid-cols-2 gap-3">
                     <div>
                         <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 01</p>
@@ -72,6 +72,17 @@ const HomePage = () => {
                     </div>
                     <div className="place-self-center text-[#ABABAB]">
                         <p>Discover if your car is ready to unlock its full potential with our tuning services. Enter your car's type, model, or make to see if we can enhance its performance and take your driving experience to the next level.</p>
+                        <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
+                            <a href="/contact" className="relative">
+                                <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                                <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                    <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                    <div className="skew-x-[10deg] text-[#FE5C43]">
+                                        <ArrowForward />
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -165,7 +176,7 @@ const HomePage = () => {
                 </section>
             </Marquee>
 
-            <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8  lg:py-20 italic">
+            <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8  lg:py-20 italic" id="about">
                 <div className="grid lg:grid-cols-2 gap-4 lg:gap-20">
                     <div className="place-self-center">
                         <div>
@@ -256,7 +267,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="flex lg:mt-8 mt-4 justify-center">
-                        <a href="#" className="relative">
+                        <a href="/contact" className="relative">
                             <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                             <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-white border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
                                 <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>

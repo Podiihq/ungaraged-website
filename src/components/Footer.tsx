@@ -11,10 +11,10 @@ const Footer = () => {
                     </div>
                     <div className="py-4">
                         <p className="font-bold lg:mb-4 text-center">Home Link</p>
-                        <div className="flex justify-center lg:block gap-4 text-[#ABABAB]">
-                            <p>Top</p>
-                            <p className="lg:py-2">Services</p>
-                            <p>About Us</p>
+                        <div className="flex justify-center lg:flex-col gap-4 lg:gap-0 text-[#ABABAB]">
+                            <a href="#top" className="hover:underline">Top</a>
+                            <a href="#services" className="lg:py-2 hover:underline">Services</a>
+                            <a href="#about" className="hover:underline">About Us</a>
                         </div>
 
                     </div>
