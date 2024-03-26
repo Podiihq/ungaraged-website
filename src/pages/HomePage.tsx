@@ -101,22 +101,22 @@ const HomePage = () => {
             </section>
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                 <div>
-                    <div className="italic w-1/2">
+                    <div className="italic lg:w-1/2">
                         <div>
                             <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 03</p>
-                            <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
+                            <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">We sell performance parts</p>
                         </div>
                         <div className="mt-4 text-[#ABABAB]">
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
                     </div>
-                    <Marquee >
+                    <Marquee direction="right">
                         <div className="mt-8 flex gap-6">
-                            <img src={part1} alt="" className="" />
-                            <img src={part2} alt="" />
-                            <img src={part3} alt="" />
-                            <img src={part4} alt="" />
-                            <img src={part5} alt="" />
+                            <img src={part1} alt="" className="ml-6 w-[300px] h-[400px] md:w-auto md:h-auto" />
+                            <img src={part2} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
+                            <img src={part3} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
+                            <img src={part4} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
+                            <img src={part5} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
                         </div>
                     </Marquee>
 
