@@ -4,6 +4,7 @@ import HeroMobile from "../assets/images/hero/HeroMobile.png"
 import MouseSvg from "../assets/images/icons/mouse.svg"
 import HeroVideo from "../assets/videos/vid-2.mp4"
 import { NavBar } from "../components/NavBar"
+import Service2 from "../assets/services/service2.png"
 
 
 const HomePage = () => {
@@ -24,10 +25,10 @@ const HomePage = () => {
                         </div>
                         <div className="flex justify-center md:justify-start lg:mt-8 px-4 md:px-0 mt-4">
                             <a href="#" className="relative">
-                                <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-white -skew-x-[15deg] transform"></span>
-                                <span className="hover:translate-y-2 transform duration-300 -skew-x-[15deg] flex items-center gap-2 bg-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
-                                    <p className="skew-x-[15deg]">Get in Touch</p>
-                                    <div className="skew-x-[15deg]">
+                                <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                                <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                    <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                    <div className="skew-x-[10deg] text-[#FE5C43]">
                                         <ArrowForward />
                                     </div>
                                 </span>
@@ -58,6 +59,31 @@ const HomePage = () => {
                 </div>
                 <div>
                     <CarFilter />
+                </div>
+            </section>
+            <section className="py-10">
+                <div className="grid lg:grid-cols-2">
+                    <img src={Service2} alt="" />
+                    <div className="md:place-self-center md:w-2/3 italic px-4 mt-8">
+                        <div>
+                            <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 02</p>
+                            <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
+                        </div>
+                        <div className="mt-4">
+                            Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
+                        </div>
+                        <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
+                            <a href="#" className="relative">
+                                <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                                <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                    <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                    <div className="skew-x-[10deg] text-[#FE5C43]">
+                                        <ArrowForward />
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
