@@ -9,7 +9,6 @@ import Service4 from "../assets/services/service4.png"
 import Star from "../assets/illustration/star.svg"
 import Marquee from "react-fast-marquee"
 import AboutImage from "../assets/about/AboutImage.png"
-import AboutImage2 from "../assets/about/image.png"
 import { CarFilter } from "../components/CarFilter"
 
 import part1 from "../assets/parts/1.png"
@@ -109,6 +108,17 @@ const HomePage = () => {
                         <div className="mt-4 text-[#ABABAB]">
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
+                        <div className="flex lg:mt-8 mt-4">
+                            <a href="#" className="relative">
+                                <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                                <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                    <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                    <div className="skew-x-[10deg] text-[#FE5C43]">
+                                        <ArrowForward />
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                     <Marquee direction="right">
                         <div className="mt-8 flex gap-6">
@@ -140,11 +150,11 @@ const HomePage = () => {
             </section>
             <Marquee>
                 <section className="flex gap-10 items-center overflow-hidden">
-                    <p className="text-7xl lg:text-9xl font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent opacity-30">Power</p>
+                    <p className="text-7xl lg:text-9xl font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">Power</p>
                     <img src={Star} alt="" />
-                    <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent opacity-30">Performance</p>
+                    <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">Performance</p>
                     <img src={Star} alt="" />
-                    <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent opacity-30">Speed</p>
+                    <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">Speed</p>
                     <img src={Star} alt="" />
                 </section>
             </Marquee>
