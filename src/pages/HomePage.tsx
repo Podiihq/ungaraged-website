@@ -196,7 +196,41 @@ const HomePage = () => {
                     </div>
                 </section>
             </div>
+            <section>
+                <div className="lg:py-20 py-8 italic">
+                    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+                        <p className="font-bold uppercase text-[#FE5C43] mb-4">What People say about Us</p>
+                        <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">Testimonials</p>
+                    </div>
+                    <div className="py-8">
+                        <Marquee>
+                            <Testimonial userName={"Sarah M."} statement={"Exceptional car tuning services, highly recommended!"} />
+                            <Testimonial userName={"Peter K."} statement={"Reliable maintenance work, always satisfied with the results."} />
+                            <Testimonial userName={"Jane W."} statement={"Efficient car repairs, got my vehicle back on the road in no time."} />
+                            <Testimonial userName={"David M."} statement={"Smooth car importing process, hassle-free and professional."} />
+                            <Testimonial userName={"Faith N."} statement={"Top-notch tuning expertise, my car performs better than ever."} />
+                            <Testimonial userName={"Joseph K"} statement={"Consistent maintenance keeps my car running smoothly."} />
+                            <Testimonial userName={"Mercy A"} statement={"Impressive repair job, they fixed what others couldn't."} />
+                            <Testimonial userName={"Kelvin O."} statement={"Seamless car importation, exceeded my expectations."} />
+                            <Testimonial userName={"Alice M."} statement={"Trustworthy and skilled team, wouldn't go anywhere else."} />
+                            <Testimonial userName={"Michael W."} statement={"Prompt and reliable tuning services, worth every penny."} />
+                        </Marquee>
+                        <Marquee direction="right" className="my-4">
+                            <Testimonial userName={"Grace K."} statement={"Efficient maintenance keeps my car in peak condition."} />
+                            <Testimonial userName={"Brian M."} statement={"Flawless repair work, they know cars inside out."} />
+                            <Testimonial userName={"Sharon L."} statement={"Smooth importing process, saved me a lot of time and stress."} />
+                            <Testimonial userName={"Collins N."} statement={"Expert tuning transformed my driving experience."} />
+                            <Testimonial userName={"Lucy O."} statement={"Dependable maintenance service, keeps my car on the road."} />
+                            <Testimonial userName={"Daniel M."} statement={"Fast and effective repairs, got me back on track swiftly."} />
+                            <Testimonial userName={"Rose A."} statement={"Effortless car importation, excellent customer service."} />
+                            <Testimonial userName={"Timothy K."} statement={"Skilled technicians, they understand cars like no other."} />
+                            <Testimonial userName={"Brenda W"} statement={"Reliable tuning services, they breathe new life into cars."} />
+                            <Testimonial userName={"John M."} statement={"Efficient maintenance, my car runs like a dream."} />
+                        </Marquee>
 
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
@@ -204,4 +238,20 @@ const HomePage = () => {
 export default HomePage
 
 
+interface TestimonialProps {
+    userName: string;
+    statement: string;
+}
+
+export const Testimonial = (props: TestimonialProps) => {
+    return (
+        <div className="flex mx-2 max-w-xs md:max-w-sm">
+            <div className="bg-[#141414] p-6 border border-[#3C3C3C] rounded-xl">
+                <p>{props.userName}</p>
+                <p className="mt-4 text-[#ABABAB]">"{props.statement}"</p>
+            </div>
+        </div>
+
+    )
+}
 
