@@ -57,7 +57,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+            <section className="">
                 <div className="">
                     <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
                     {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
