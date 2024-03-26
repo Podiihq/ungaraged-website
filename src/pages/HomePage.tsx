@@ -9,7 +9,14 @@ import Service4 from "../assets/services/service4.png"
 import Star from "../assets/illustration/star.svg"
 import Marquee from "react-fast-marquee"
 import AboutImage from "../assets/about/AboutImage.png"
+import AboutImage2 from "../assets/about/image.png"
 import { CarFilter } from "../components/CarFilter"
+
+import part1 from "../assets/parts/1.png"
+import part2 from "../assets/parts/2.png"
+import part3 from "../assets/parts/3.png"
+import part4 from "../assets/parts/4.png"
+import part5 from "../assets/parts/5.png"
 
 
 const HomePage = () => {
@@ -65,6 +72,7 @@ const HomePage = () => {
                 <div>
                     <CarFilter />
                 </div>
+
             </section>
             <section className="py-10">
                 <div className="grid lg:grid-cols-2">
@@ -91,6 +99,29 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+                <div>
+                    <div className="italic w-1/2">
+                        <div>
+                            <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 03</p>
+                            <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
+                        </div>
+                        <div className="mt-4 text-[#ABABAB]">
+                            Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
+                        </div>
+                    </div>
+                    <Marquee >
+                        <div className="mt-8 flex gap-6">
+                            <img src={part1} alt="" className="" />
+                            <img src={part2} alt="" />
+                            <img src={part3} alt="" />
+                            <img src={part4} alt="" />
+                            <img src={part5} alt="" />
+                        </div>
+                    </Marquee>
+
+                </div>
+            </section>
             <section className="italic">
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                     <div>
@@ -107,7 +138,7 @@ const HomePage = () => {
                     <img src={Service4} alt="" className="w-full " />
                 </div>
             </section>
-            <Marquee >
+            <Marquee>
                 <section className="flex gap-10 items-center overflow-hidden">
                     <p className="text-7xl lg:text-9xl font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent opacity-30">Power</p>
                     <img src={Star} alt="" />
@@ -115,7 +146,6 @@ const HomePage = () => {
                     <img src={Star} alt="" />
                     <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent opacity-30">Speed</p>
                     <img src={Star} alt="" />
-
                 </section>
             </Marquee>
 
