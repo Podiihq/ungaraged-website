@@ -113,7 +113,7 @@ const HomePage = () => {
                             </a>
                         </div>
                     </div>
-                    <img src={Service2} alt="" />
+                    <img src={Service2} alt="" className="lg:hidden" />
                 </div>
             </section>
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
