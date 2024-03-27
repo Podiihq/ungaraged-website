@@ -93,7 +93,7 @@ const HomePage = () => {
             <section className="lg:py-10">
                 <div className="grid lg:grid-cols-2">
                     <img src={Service2} alt="" className="hidden lg:block" />
-                    <div className="lg:place-self-center italic px-4 lg:mt-8 md:px-24 md:max-w-full">
+                    <div className="lg:place-self-center italic px-4 lg:mt-8 md:px-24">
                         <div>
                             <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-sm md:text-base">Service 02</p>
                             <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
@@ -139,7 +139,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <Marquee direction="right">
-                        <div className="mt-8 flex gap-4 lg:gap-6">
+                        <div className="lg:mt-8 flex gap-4 lg:gap-6">
                             <img src={part1} alt="" className="ml-6 w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
                             <img src={part2} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
                             <img src={part3} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
@@ -167,7 +167,7 @@ const HomePage = () => {
                     <img src={Service4} alt="" className="w-full mt-4" />
                 </div>
             </section>
-            <Marquee className="lg:mb-16">
+            <Marquee className="mt-8 lg:my-16">
                 <section className="flex gap-10 items-center overflow-hidden">
                     <p className="text-7xl lg:text-9xl font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">Power</p>
                     <img src={Star} alt="" />
