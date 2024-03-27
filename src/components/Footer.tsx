@@ -26,13 +26,13 @@ const Footer = () => {
                     <div className="mt-4 lg:mt-0">
                         <p className="font-bold mb-2 lg:mb-4 text-center lg:text-left">Social Media</p>
                         <div className="flex gap-4 justify-center lg:justify-start">
-                            <a href="" className="hover:text-[#FE5C43]">
+                            <a href="https://instagram.com/ungaraged" className="hover:text-[#FE5C43]">
                                 <Instagram />
                             </a>
-                            <a href="" className="hover:text-[#FE5C43]">
+                            <a href="https://facebook.com/ungaraged" className="hover:text-[#FE5C43]">
                                 <Facebook />
                             </a>
-                            <a href="" className="hover:text-[#FE5C43]">
+                            <a href="https://twitter.com/ungaraged" className="hover:text-[#FE5C43]">
                                 <Twitter />
                             </a>
                         </div>

@@ -9,15 +9,15 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="border border-[#3C3C3C] mb-4 bg-[#141414]">
+        <div className="border border-[#3C3C3C] mb-2 lg:mb-4 bg-[#141414]">
             <button
                 className="flex justify-between w-full p-4"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span className="font-semibold italic text-[#D9D9D9]">{question}</span>
+                <span className="font-semibold italic text-[#D9D9D9] text-sm lg:text-base">{question}</span>
                 <span>{isOpen ? '-' : '+'}</span>
             </button>
-            {isOpen && <div className="p-4 italic text-[#D9D9D9]">{answer}</div>}
+            {isOpen && <div className="p-4 italic text-[#D9D9D9] text-sm lg:text-base">{answer}</div>}
         </div>
     );
 };
@@ -43,7 +43,7 @@ export const AllFAQs: React.FC = () => {
     ];
 
     return (
-        <div className="mx-auto mt-8">
+        <div className="mx-auto mt-4 lg:mt-8">
             {faqs.map((faq, index) => (
                 <FAQItem key={index} question={faq.question} answer={faq.answer} />
             ))}

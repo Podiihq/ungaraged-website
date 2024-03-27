@@ -67,11 +67,11 @@ const HomePage = () => {
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20" id="services">
                 <div className="italic grid lg:grid-cols-2 gap-3">
                     <div>
-                        <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 01</p>
+                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 01</p>
                         <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">CAR TunING: See If Your Car Qualifies.</p>
                     </div>
                     <div className="place-self-center text-[#ABABAB]">
-                        <p>Discover if your car is ready to unlock its full potential with our tuning services. Enter your car's type, model, or make to see if we can enhance its performance and take your driving experience to the next level.</p>
+                        <p className="text-sm md:text-base">Discover if your car is ready to unlock its full potential with our tuning services. Enter your car's type, model, or make to see if we can enhance its performance and take your driving experience to the next level.</p>
                         <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
                             <a href="/contact" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
@@ -90,18 +90,18 @@ const HomePage = () => {
                 </div>
 
             </section>
-            <section className="py-10">
+            <section className="lg:py-10">
                 <div className="grid lg:grid-cols-2">
-                    <img src={Service2} alt="" />
-                    <div className="lg:place-self-center italic px-4 mt-8 md:px-24 md:max-w-full">
+                    <img src={Service2} alt="" className="hidden lg:block" />
+                    <div className="lg:place-self-center italic px-4 lg:mt-8 md:px-24 md:max-w-full">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 02</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 02</p>
                             <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
                         </div>
-                        <div className="mt-4 text-[#ABABAB]">
+                        <div className="mt-4 text-[#ABABAB] text-sm md:text-base">
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
-                        <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
+                        <div className="lg:flex lg:mt-8 px-4 md:px-0 mt-4 hidden">
                             <a href="#" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                                 <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
@@ -113,16 +113,17 @@ const HomePage = () => {
                             </a>
                         </div>
                     </div>
+                    <img src={Service2} alt="" />
                 </div>
             </section>
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                 <div>
                     <div className="italic lg:w-1/2">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] mb-4">Service 03</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 03</p>
                             <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">We sell performance parts</p>
                         </div>
-                        <div className="mt-4 text-[#ABABAB]">
+                        <div className="mt-4 text-[#ABABAB] text-sm md:text-base">
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
                         <div className="flex lg:mt-8 mt-4">
@@ -138,12 +139,13 @@ const HomePage = () => {
                         </div>
                     </div>
                     <Marquee direction="right">
-                        <div className="mt-8 flex gap-6">
-                            <img src={part1} alt="" className="ml-6 w-[300px] h-[400px] md:w-auto md:h-auto" />
-                            <img src={part2} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
-                            <img src={part3} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
-                            <img src={part4} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
-                            <img src={part5} alt="" className="w-[300px] h-[400px] md:w-auto md:h-auto" />
+                        <div className="mt-8 flex gap-4 lg:gap-6">
+                            <img src={part1} alt="" className="ml-6 w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part2} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part4} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part5} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
                         </div>
                     </Marquee>
 
@@ -153,16 +155,16 @@ const HomePage = () => {
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                     <div>
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] mb-4 text-center">Service 04</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-center text-sm md:text-base">Service 04</p>
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">Expert Car <br /> Importation Services </p>
                         </div>
                         <div className="mt-4 text-center">
-                            <p className="lg:w-1/2 mx-auto text-[#ABABAB]">
-                                Expand your horizons with our expert car importation services, designed to bring your desired vehicle to your doorstep with ease. From navigating international regulations to arranging safe and efficient transport, we handle every step of the import process, so you can focus on enjoying your new ride. Let us turn your global automotive aspirations into reality, one import at a time
+                            <p className="lg:w-1/2 mx-auto text-[#ABABAB] text-sm md:text-base">
+                                Expand your horizons with our expert car importation services, designed to bring your desired vehicle to your doorstep with ease. Let us turn your global automotive aspirations into reality, one import at a time
                             </p>
                         </div>
                     </div>
-                    <img src={Service4} alt="" className="w-full " />
+                    <img src={Service4} alt="" className="w-full mt-4" />
                 </div>
             </section>
             <Marquee>
@@ -183,8 +185,11 @@ const HomePage = () => {
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">About Us</p>
                         </div>
                         <div className="mt-4">
-                            <p className="text-[#ABABAB]">
-                                Expand your horizons with our expert car importation services, designed to bring your desired vehicle to your doorstep with ease. From navigating international regulations to arranging safe and efficient transport, we handle every step of the import process, so you can focus on enjoying your new ride. Let us turn your global automotive aspirations into reality, one import at a time
+                            <p className="text-[#ABABAB] text-sm md:text-base">
+                                Founded in 2020, Ungaraged is a global leader in aftermarket performance tuning for Volkswagen, Audi, BMW, Mercedes, Porsche, and other vehicles. We love to import, build, drive and develop innovative products for race cars.
+                            </p>
+                            <p className="text-[#ABABAB] text-sm md:text-base mt-2">
+                                We have first hand experience in motorsports and strive to deliver award winning quality for our customers. Our services are engineered to maximize performance, while maintaining complete OEM+ reliability and drivability.
                             </p>
                         </div>
                     </div>
@@ -196,11 +201,11 @@ const HomePage = () => {
                 <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                     <div className="italic lg:w-1/2 mx-auto mb-8 lg:mb-16">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] mb-4 text-center">Events</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-center text-sm lg:text-base">Events</p>
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">Car Racing</p>
                         </div>
                         <div className="mt-4">
-                            <p className="text-[#ABABAB] text-center">
+                            <p className="text-[#ABABAB] text-center text-sm md:text-base">
                                 Expand your horizons with our expert car we handle every step of the import process, Let us turn your global automotive aspirations into reality, one import at a time
                             </p>
                         </div>
@@ -212,16 +217,16 @@ const HomePage = () => {
                 </section>
             </div>
             <section>
-                <div className="lg:py-20 py-8 italic">
+                <div className="lg:py-20 pt-8 italic">
                     <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
-                        <p className="font-bold uppercase text-[#FE5C43] mb-4">What People say about Us</p>
+                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm lg:text-base">What People say about Us</p>
                         <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">Testimonials</p>
                     </div>
-                    <div className="py-8">
+                    <div className="pt-4 pb-8 lg:py-8">
                         <Marquee>
                             <Testimonial userName={"Sarah M."} statement={"Exceptional car tuning services, highly recommended!"} />
-                            <Testimonial userName={"Peter K."} statement={"Reliable maintenance work, always satisfied with the results."} />
-                            <Testimonial userName={"Jane W."} statement={"Efficient car repairs, got my vehicle back on the road in no time."} />
+                            <Testimonial userName={"Peter K."} statement={"Reliable maintenance work, always satisfied."} />
+                            <Testimonial userName={"Jane W."} statement={"Efficient car repairs, got my vehicle back on the road in time."} />
                             <Testimonial userName={"David M."} statement={"Smooth car importing process, hassle-free and professional."} />
                             <Testimonial userName={"Faith N."} statement={"Top-notch tuning expertise, my car performs better than ever."} />
                             <Testimonial userName={"Joseph K"} statement={"Consistent maintenance keeps my car running smoothly."} />
@@ -230,12 +235,12 @@ const HomePage = () => {
                             <Testimonial userName={"Alice M."} statement={"Trustworthy and skilled team, wouldn't go anywhere else."} />
                             <Testimonial userName={"Michael W."} statement={"Prompt and reliable tuning services, worth every penny."} />
                         </Marquee>
-                        <Marquee direction="right" className="my-4">
+                        <Marquee direction="right" className="lg:my-4 my-2">
                             <Testimonial userName={"Grace K."} statement={"Efficient maintenance keeps my car in peak condition."} />
                             <Testimonial userName={"Brian M."} statement={"Flawless repair work, they know cars inside out."} />
-                            <Testimonial userName={"Sharon L."} statement={"Smooth importing process, saved me a lot of time and stress."} />
+                            <Testimonial userName={"Sharon L."} statement={"Smooth importing process, saved me a lot of time."} />
                             <Testimonial userName={"Collins N."} statement={"Expert tuning transformed my driving experience."} />
-                            <Testimonial userName={"Lucy O."} statement={"Dependable maintenance service, keeps my car on the road."} />
+                            <Testimonial userName={"Lucy O."} statement={"Dependable maintenance service."} />
                             <Testimonial userName={"Daniel M."} statement={"Fast and effective repairs, got me back on track swiftly."} />
                             <Testimonial userName={"Rose A."} statement={"Effortless car importation, excellent customer service."} />
                             <Testimonial userName={"Timothy K."} statement={"Skilled technicians, they understand cars like no other."} />
@@ -261,7 +266,7 @@ const HomePage = () => {
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">DRIVE BEYOND LIMITS</p>
                         </div>
                         <div className="mt-4 text-center">
-                            <p className="lg:w-1/2 mx-auto text-[#141414]">
+                            <p className="lg:w-1/2 mx-auto text-[#141414] text-sm md:text-base">
                                 From navigating international regulations to arranging safe and efficient transport, we handle every step of the import process, so you can focus on enjoying your new ride. Let us turn your global automotive aspirations into reality, one import at a time
                             </p>
                         </div>
