@@ -67,7 +67,7 @@ const HomePage = () => {
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20" id="services">
                 <div className="italic grid lg:grid-cols-2 gap-3">
                     <div>
-                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 01</p>
+                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-sm md:text-base">Service 01</p>
                         <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">CAR TunING: See If Your Car Qualifies.</p>
                     </div>
                     <div className="place-self-center text-[#ABABAB]">
@@ -95,7 +95,7 @@ const HomePage = () => {
                     <img src={Service2} alt="" className="hidden lg:block" />
                     <div className="lg:place-self-center italic px-4 lg:mt-8 md:px-24 md:max-w-full">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 02</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-sm md:text-base">Service 02</p>
                             <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">cAR SERVICE AND MAINTENANCE </p>
                         </div>
                         <div className="mt-4 text-[#ABABAB] text-sm md:text-base">
@@ -117,10 +117,10 @@ const HomePage = () => {
                 </div>
             </section>
             <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
-                <div>
-                    <div className="italic lg:w-1/2">
+                <div className="grid lg:grid-cols-2 gap-4 lg:gap-10">
+                    <div className="italic place-self-center">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm md:text-base">Service 03</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-sm md:text-base">Service 03</p>
                             <p className="text-3xl md:text-5xl lg::text-[60px] font-[900] uppercase leading-none">We sell performance parts</p>
                         </div>
                         <div className="mt-4 text-[#ABABAB] text-sm md:text-base">
@@ -140,12 +140,12 @@ const HomePage = () => {
                     </div>
                     <Marquee direction="right">
                         <div className="mt-8 flex gap-4 lg:gap-6">
-                            <img src={part1} alt="" className="ml-6 w-[200px] h-[300px] md:w-auto md:h-auto" />
-                            <img src={part2} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
-                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
-                            <img src={part4} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
-                            <img src={part5} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
-                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-auto md:h-auto" />
+                            <img src={part1} alt="" className="ml-6 w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
+                            <img src={part2} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
+                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
+                            <img src={part4} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
+                            <img src={part5} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
+                            <img src={part3} alt="" className="w-[200px] h-[300px] md:w-[300px] md:h-[400px]" />
                         </div>
                     </Marquee>
 
@@ -155,7 +155,7 @@ const HomePage = () => {
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                     <div>
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-center text-sm md:text-base">Service 04</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-center text-sm md:text-base">Service 04</p>
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">Expert Car <br /> Importation Services </p>
                         </div>
                         <div className="mt-4 text-center">
@@ -167,7 +167,7 @@ const HomePage = () => {
                     <img src={Service4} alt="" className="w-full mt-4" />
                 </div>
             </section>
-            <Marquee>
+            <Marquee className="lg:mb-16">
                 <section className="flex gap-10 items-center overflow-hidden">
                     <p className="text-7xl lg:text-9xl font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">Power</p>
                     <img src={Star} alt="" />
@@ -201,7 +201,7 @@ const HomePage = () => {
                 <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                     <div className="italic lg:w-1/2 mx-auto mb-8 lg:mb-16">
                         <div>
-                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-center text-sm lg:text-base">Events</p>
+                            <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-center text-sm lg:text-base">Events</p>
                             <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none text-center">Car Racing</p>
                         </div>
                         <div className="mt-4">
@@ -219,10 +219,10 @@ const HomePage = () => {
             <section>
                 <div className="lg:py-20 pt-8 italic">
                     <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
-                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-4 text-sm lg:text-base">What People say about Us</p>
+                        <p className="font-bold uppercase text-[#FE5C43] lg:mb-2 text-sm lg:text-base">What People say about Us</p>
                         <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">Testimonials</p>
                     </div>
-                    <div className="pt-4 pb-8 lg:py-8">
+                    <div className="pt-4 pb-8 lg:pb-0 lg:py-8">
                         <Marquee>
                             <Testimonial userName={"Sarah M."} statement={"Exceptional car tuning services, highly recommended!"} />
                             <Testimonial userName={"Peter K."} statement={"Reliable maintenance work, always satisfied."} />
@@ -251,7 +251,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className="px-4 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-10 italic">
+            <section className="px-4 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-10 italic">
                 <div className="lg:w-1/2">
                     <p className="text-3xl md:text-5xl lg:text-[60px] font-[900] uppercase leading-none">Frequently Asked Questions - <span className="text-[#FE5C43]">FAQs</span></p>
                 </div>
