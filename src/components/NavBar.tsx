@@ -12,10 +12,11 @@ export const NavBar = () => {
                         <a href="#about" className="hover:underline hover:text-[#FE5C43]">About Us</a>
                         <a href="/contact" className="hover:underline hover:text-[#FE5C43]">Contact Us</a>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <a href="/contact" className="hover:underline hover:text-[#FE5C43] md:hidden text-sm underline">Contact Us</a>
+                    <a href="/#services" className="md:flex items-center gap-2 hidden hover:text-[#FE5C43]">
                         <SearchIcon />
                         <p className="text-sm hidden md:block">Search your car</p>
-                    </div>
+                    </a>
                 </div>
             </nav>
         </div>
