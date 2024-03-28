@@ -102,7 +102,7 @@ const HomePage = () => {
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
                         <div className="lg:flex lg:mt-8 px-4 md:px-0 mt-4 hidden">
-                            <a href="#" className="relative">
+                            <a href="https://wa.link/k6zq3z" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                                 <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
                                     <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
@@ -127,7 +127,7 @@ const HomePage = () => {
                             Explore the places you love with the people you love. It’s time to make some memories. Whether taking families on new adventures or electrifying fleets at scale, our vehicles all share a common goal — preserving the natural world for generations to come.
                         </div>
                         <div className="flex lg:mt-8 mt-4">
-                            <a href="#" className="relative">
+                            <a href="https://wa.link/k6zq3z" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                                 <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
                                     <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
@@ -165,6 +165,17 @@ const HomePage = () => {
                         </div>
                     </div>
                     <img src={Service4} alt="" className="w-full mt-4" />
+                    <div className="flex justify-center lg:mt-8 mt-4">
+                        <a href="https://wa.link/k6zq3z" className="relative">
+                            <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
+                            <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
+                                <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
+                                <div className="skew-x-[10deg] text-[#FE5C43]">
+                                    <ArrowForward />
+                                </div>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </section>
             <Marquee className="mt-8 lg:my-16">
