@@ -11,7 +11,6 @@ import Service4 from "../assets/services/service4.png"
 import Star from "../assets/illustration/star.svg"
 import Marquee from "react-fast-marquee"
 import AboutImage from "../assets/about/AboutImage.png"
-import { CarFilter } from "../components/CarFilter"
 
 import part1 from "../assets/parts/1.png"
 import part2 from "../assets/parts/2.png"
@@ -87,7 +86,6 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    {/* <CarFilter /> */}
                     <FilterComponent />
                 </div>
 
