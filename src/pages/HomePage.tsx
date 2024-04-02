@@ -22,6 +22,7 @@ import { Testimonial } from "../components/Testimonials"
 import { AllFAQs } from "../components/FAQs"
 import CarDisplay from "../assets/images/car-display.png"
 import Footer from "../components/Footer"
+import FilterComponent from "../components/FilterComponent"
 
 
 const HomePage = () => {
@@ -86,7 +87,8 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    <CarFilter />
+                    {/* <CarFilter /> */}
+                    <FilterComponent />
                 </div>
 
             </section>
