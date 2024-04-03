@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { ArrowForward } from './Icons';
-
 
 const FilterComponent: React.FC = () => {
     const [selectedType, setSelectedType] = useState<string>('');
@@ -14,6 +12,8 @@ const FilterComponent: React.FC = () => {
     const handleModelChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedModel(event.target.value);
     };
+
+
 
 
     interface TuningLevel {
@@ -126,16 +126,23 @@ const FilterComponent: React.FC = () => {
         }
     ];
 
-
+    const carTypes = carData.map((carType) => carType.type);
     const filteredModels = selectedType
         ? carData.find((carType) => carType.type === selectedType)?.models || []
         : [];
+
+    const selectedModelData = selectedModel
+        ? filteredModels.find((model) => model.name === selectedModel)
+        : undefined;
+
 
     return (
         <div className="container mx-auto mt-8 bg-[#141414] p-6">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
-                    <label htmlFor="carType" className="text-sm font-medium text-white italic">Select Car Type:</label>
+                    <label htmlFor="carType" className="block font-medium">
+                        Select Car Type:
+                    </label>
                     <select
                         id="carType"
                         className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
@@ -143,13 +150,17 @@ const FilterComponent: React.FC = () => {
                         value={selectedType}
                     >
                         <option value="">Select</option>
-                        {carData.map((carType) => (
-                            <option key={carType.type} value={carType.type}>{carType.type}</option>
+                        {carTypes.map((carType) => (
+                            <option key={carType} value={carType}>
+                                {carType}
+                            </option>
                         ))}
                     </select>
                 </div>
                 <div>
-                    <label htmlFor="carModel" className="text-sm font-medium text-white italic">Select Car Model:</label>
+                    <label htmlFor="carModel" className="block font-medium">
+                        Select Car Model:
+                    </label>
                     <select
                         id="carModel"
                         className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
@@ -159,12 +170,32 @@ const FilterComponent: React.FC = () => {
                     >
                         <option value="">Select</option>
                         {filteredModels.map((model) => (
-                            <option key={model.name} value={model.name}>{model.name}</option>
+                            <option key={model.name} value={model.name}>
+                                {model.name}
+                            </option>
                         ))}
                     </select>
                 </div>
+                {/* <div>
+                    <label htmlFor="compatibleModels" className="block font-medium">
+                        Compatible Models:
+                    </label>
+                    <select
+                        id="compatibleModels"
+                        className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
+                        value={selectedModel}
+                        disabled={!selectedModel}
+                    >
+                        <option value="">Select</option>
+                        {compatibleModels.map((model) => (
+                            <option key={model} value={model}>
+                                {model}
+                            </option>
+                        ))}
+                    </select>
+                </div> */}
             </div>
-            <div className="mt-4">
+            {/* <div className="mt-4">
                 {selectedModel && (
                     <div>
                         <h2 className="text-xl font-medium mt-8 italic">Tuning Levels for {selectedModel}</h2>
@@ -191,8 +222,33 @@ const FilterComponent: React.FC = () => {
                         </ul>
                     </div>
                 )}
+            </div> */}
+            <div>
+                {selectedModelData && (
+                    <div className="mt-8 flex gap-10 md:gap-20">
+                        <div>
+                            <h2 className="text-xl font-medium">Tuning Levels for {selectedModelData.name}</h2>
+                            <ul className="mt-4 space-y-2 text-[#ABABAB]">
+                                {selectedModelData.tuningLevels.map((level) => (
+                                    <li key={level.name}>
+                                        <span className="font-medium">{level.name}:</span> {level.power}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="">
+                            <h2 className="text-xl font-medium">Compatible Models</h2>
+                            <ul className="mt-2 space-y-2 text-[#ABABAB]">
+                                {selectedModelData.compatibleModels.map((model) => (
+                                    <li key={model}>{model}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                )}
             </div>
-        </div>
+        </div >
+
     );
 };
 

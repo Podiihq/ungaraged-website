@@ -72,7 +72,7 @@ const HomePage = () => {
                     </div>
                     <div className="place-self-center text-[#ABABAB]">
                         <p className="text-sm md:text-base">Discover if your car is ready to unlock its full potential with our tuning services. Enter your car's type, model, or make to see if we can enhance its performance and take your driving experience to the next level.</p>
-                        <div className="lg:flex lg:mt-8 px-4 md:px-0 mt-4 hidden ">
+                        <div className="flex lg:mt-8 px-4 md:px-0 mt-4">
                             <a href="/contact" className="relative">
                                 <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
                                 <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
