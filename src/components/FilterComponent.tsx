@@ -14,8 +14,6 @@ const FilterComponent: React.FC = () => {
     };
 
 
-
-
     interface TuningLevel {
         name: string;
         power: string;
@@ -176,53 +174,8 @@ const FilterComponent: React.FC = () => {
                         ))}
                     </select>
                 </div>
-                {/* <div>
-                    <label htmlFor="compatibleModels" className="block font-medium">
-                        Compatible Models:
-                    </label>
-                    <select
-                        id="compatibleModels"
-                        className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
-                        value={selectedModel}
-                        disabled={!selectedModel}
-                    >
-                        <option value="">Select</option>
-                        {compatibleModels.map((model) => (
-                            <option key={model} value={model}>
-                                {model}
-                            </option>
-                        ))}
-                    </select>
-                </div> */}
-            </div>
-            {/* <div className="mt-4">
-                {selectedModel && (
-                    <div>
-                        <h2 className="text-xl font-medium mt-8 italic">Tuning Levels for {selectedModel}</h2>
-                        <ul className="mt-4 space-y-2">
-                            {filteredModels
-                                .find((model) => model.name === selectedModel)
-                                ?.tuningLevels.map((level) => (
-                                    <li key={level.name} className='italic'>
-                                        <span className="font-medium">{level.name}:</span> {level.power}
 
-                                    </li>
-                                ))}
-                            <div className="flex pt-4">
-                                <a href="https://wa.link/k6zq3z" className="relative">
-                                    <span className="absolute top-0 left-0 mt-1 ml-1 lg:mt-1.5 lg:ml-1.5 h-full w-full bg-[#FE5C43] -skew-x-[10deg] transform"></span>
-                                    <span className="border-2 hover:translate-y-2 transform duration-300 -skew-x-[10deg] flex items-center gap-2 bg-black border-[#FE5C43] fold-bold relative h-full w-full px-4 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-semibold text-white transition">
-                                        <p className="skew-x-[10deg] text-[#FE5C43]">Get in Touch</p>
-                                        <div className="skew-x-[10deg] text-[#FE5C43]">
-                                            <ArrowForward />
-                                        </div>
-                                    </span>
-                                </a>
-                            </div>
-                        </ul>
-                    </div>
-                )}
-            </div> */}
+            </div>
             <div>
                 {selectedModelData && (
                     <div className="mt-8 flex gap-10 md:gap-20">
