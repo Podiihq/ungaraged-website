@@ -41,6 +41,7 @@ const Footer = () => {
             </div>
             <div className="py-2 bg-[#FE5C43]">
                 <p className="text-center text-xs">Copyright Ungaraged 2024 || All Rights Reserved</p>
+                <p className="text-center text-xs mt-2">Designed by <a href="https://podiihq.com/" className="underline">Podii Consultants LTD.</a></p>
             </div>
         </div>
 
