@@ -26,10 +26,10 @@ import FilterComponent from "../components/FilterComponent"
 
 const HomePage = () => {
     return (
-        <div className="bg-black text-white scroll-smooth">
+        <div className="bg-black text-white scroll-smooth" id="top">
             <NavBar />
             <section className="relative">
-                <div className="relative" id="top">
+                <div className="relative" >
                     <img src={Hero} alt="" className="object-cover w-full -z-10 hidden md:block h-screen" />
                     <img src={HeroMobile} alt="" className="object-cover w-full -z-10 md:hidden h-screen" />
                     <div className="absolute bottom-[40%] left-0 lg:left-[5%] 3xl:left-[20%] md:px-24 lg:px-8 italic text-white">
@@ -250,7 +250,7 @@ const HomePage = () => {
                             <Testimonial userName={"Craig"} statement={"The power gains after Ungaraged' worked their magic are incredible. They fine-tuned my car to perfection"} />
                             <Testimonial userName={"Kimani"} statement={"I appreciated the clear communication and thorough explanation of the tuning process. Very transparent."} />
                         </Marquee>
-                        <Marquee direction="right" className="">
+                        <Marquee direction="right" className="mt-2">
                             <Testimonial userName={"Levine"} statement={"The custom ECU remap has made a world of difference. Fuel efficiency and power are on point!"} />
                             <Testimonial userName={"Jeremy"} statement={"If you want to take your car's performance to the next level, Ungaraged is the place to go."} />
                             <Testimonial userName={"Melvin"} statement={"Ungaraged took my ride from zero to hero! Their tuning is top-notch, and the service is unbeatable."} />
