@@ -60,6 +60,10 @@ const HomePage = () => {
             <section className="">
                 <div className="">
                     <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
+                    {/* <div className="flex max-w-screen">
+                        <video autoPlay muted loop src={HeroVideo2} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
+                        <video autoPlay muted loop src={HeroVideo3} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
+                    </div> */}
                     {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
                 </div>
             </section>
@@ -235,28 +239,29 @@ const HomePage = () => {
                     </div>
                     <div className="pt-4 pb-8 lg:pb-0 lg:py-8">
                         <Marquee>
-                            <Testimonial userName={"Sarah M."} statement={"Exceptional car tuning services, highly recommended!"} />
-                            <Testimonial userName={"Peter K."} statement={"Reliable maintenance work, always satisfied."} />
-                            <Testimonial userName={"Jane W."} statement={"Efficient car repairs, got my vehicle back on the road in time."} />
-                            <Testimonial userName={"David M."} statement={"Smooth car importing process, hassle-free and professional."} />
-                            <Testimonial userName={"Faith N."} statement={"Top-notch tuning expertise, my car performs better than ever."} />
-                            <Testimonial userName={"Joseph K"} statement={"Consistent maintenance keeps my car running smoothly."} />
-                            <Testimonial userName={"Mercy A"} statement={"Impressive repair job, they fixed what others couldn't."} />
-                            <Testimonial userName={"Kelvin O."} statement={"Seamless car importation, exceeded my expectations."} />
-                            <Testimonial userName={"Alice M."} statement={"Trustworthy and skilled team, wouldn't go anywhere else."} />
-                            <Testimonial userName={"Michael W."} statement={"Prompt and reliable tuning services, worth every penny."} />
+                            <Testimonial userName={"Charles"} statement={"The team at Ungaraged transformed my car into a beast on the track! Their expertise is unmatched."} />
+                            <Testimonial userName={"Joseph"} statement={"I've never experienced such a dramatic improvement in performance. Ungaraged knows their stuff!"} />
+                            <Testimonial userName={"Dan"} statement={"Absolutely thrilled with the custom tuning on my car. It's like driving a completely new machine!"} />
+                            <Testimonial userName={"Eric"} statement={"The attention to detail and personalized service at Ungaraged is second to none. They’ve made me feel like a VIP."} />
+                            <Testimonial userName={"Felix"} statement={"These guys are wizards under the hood. My car has never been this responsive or sounded this good!"} />
+                            <Testimonial userName={"Angela"} statement={"Consistent maintenance keeps my car running smoothly."} />
+                            <Testimonial userName={"Aminzo"} statement={"Professional, knowledgeable, and friendly. The tuning has been flawless and reliable. Every penny spent at Ungaraged is worth it."} />
+                            <Testimonial userName={"Eva"} statement={"From the moment I stepped into the garage, I knew my car was in good hands. Outstanding results!."} />
+                            <Testimonial userName={"Craig"} statement={"The power gains after Ungaraged' worked their magic are incredible. They fine-tuned my car to perfection"} />
+                            <Testimonial userName={"Kimani"} statement={"I appreciated the clear communication and thorough explanation of the tuning process. Very transparent."} />
                         </Marquee>
-                        <Marquee direction="right" className="lg:my-4 my-2">
-                            <Testimonial userName={"Grace K."} statement={"Efficient maintenance keeps my car in peak condition."} />
-                            <Testimonial userName={"Brian M."} statement={"Flawless repair work, they know cars inside out."} />
-                            <Testimonial userName={"Sharon L."} statement={"Smooth importing process, saved me a lot of time."} />
-                            <Testimonial userName={"Collins N."} statement={"Expert tuning transformed my driving experience."} />
-                            <Testimonial userName={"Lucy O."} statement={"Dependable maintenance service."} />
-                            <Testimonial userName={"Daniel M."} statement={"Fast and effective repairs, got me back on track swiftly."} />
-                            <Testimonial userName={"Rose A."} statement={"Effortless car importation, excellent customer service."} />
-                            <Testimonial userName={"Timothy K."} statement={"Skilled technicians, they understand cars like no other."} />
-                            <Testimonial userName={"Brenda W"} statement={"Reliable tuning services, they breathe new life into cars."} />
-                            <Testimonial userName={"John M."} statement={"Efficient maintenance, my car runs like a dream."} />
+                        <Marquee direction="right" className="">
+                            <Testimonial userName={"Levine"} statement={"The custom ECU remap has made a world of difference. Fuel efficiency and power are on point!"} />
+                            <Testimonial userName={"Jeremy"} statement={"If you want to take your car's performance to the next level, Ungaraged is the place to go."} />
+                            <Testimonial userName={"Melvin"} statement={"Ungaraged took my ride from zero to hero! Their tuning is top-notch, and the service is unbeatable."} />
+                            <Testimonial userName={"Kenneth"} statement={"The horsepower boost I got from Ungaraged is incredible. These guys are the real deal in performance tuning!"} />
+                            <Testimonial userName={"Gideon"} statement={"Driving my car after Ungaraged worked on it is a whole new experience. The difference is night and day!"} />
+                            <Testimonial userName={"Fidel"} statement={"The team at Ungaraged is passionate about what they do, and it shows in the quality of their work."} />
+                            <Testimonial userName={"Nowel"} statement={"Ungaraged isn't just a garage; it's a performance paradise. My car has never felt this alive!"} />
+                            <Testimonial userName={"Brian"} statement={"I'm blown away by the precision and expertise at Ungaraged. They've earned a customer for life."} />
+                            <Testimonial userName={"Kevin"} statement={"The custom tune from Ungaraged has transformed my car. It's more efficient and way more fun to drive."} />
+                            <Testimonial userName={"Ayub"} statement={"If you want to unleash your car's full potential, Ungaraged is the place to go. Simply amazing results!"} />
+                            <Testimonial userName={"Sigu"} statement={"The team at Ungaraged provided an exceptional tuning service and fantastic customer support. Highly recommended!"} />
                         </Marquee>
 
                     </div>
