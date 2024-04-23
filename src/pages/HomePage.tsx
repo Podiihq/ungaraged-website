@@ -528,7 +528,7 @@ const HomePage = () => {
             </a>
           </div>
           <div className="mt-8">
-            <img src={CarDisplay} alt="" />
+            <img src={CarDisplay} alt="" className="w-full" />
           </div>
         </div>
       </section>
