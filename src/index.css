@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
     font-family: "Inter", sans-serif;
@@ -8,22 +8,49 @@
 .LargeTest {
     color: white;
     text-shadow:
-        -1px -1px 0 #B8B8B8,
-        1px -1px 0 #B8B8B8,
-        -1px 1px 0 #B8B8B8,
-        1px 1px 0 #B8B8B8;
+        -1px -1px 0 #b8b8b8,
+        1px -1px 0 #b8b8b8,
+        -1px 1px 0 #b8b8b8,
+        1px 1px 0 #b8b8b8;
 }
 
 @layer base {
     .font-outline-2 {
-        -webkit-text-stroke: 2px #B8B8B8;
+        -webkit-text-stroke: 2px #b8b8b8;
     }
 
     .font-outline-4 {
-        -webkit-text-stroke: 4px #B8B8B8;
+        -webkit-text-stroke: 4px #b8b8b8;
     }
 }
 
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Apply animation to mobile menu */
+.md\\:block {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.hidden.md\\:block {
+    animation: slideOut 0.5s ease-in-out;
+}
 
 @tailwind base;
 @tailwind components;

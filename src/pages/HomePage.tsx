@@ -5,7 +5,7 @@ import MouseSvg from "../assets/images/icons/mouse.svg";
 import HeroVideo from "../assets/videos/vid-2.mp4";
 import HeroVideo2 from "../assets/videos/vid-4.mp4";
 import HeroVideo3 from "../assets/videos/vid-6.mp4";
-import { NavBar } from "../components/NavBar";
+import { NewNavbar } from "../components/NavBar";
 import Service2 from "../assets/services/service2.png";
 import Service4 from "../assets/services/service4.png";
 import Star from "../assets/illustration/star.svg";
@@ -26,7 +26,8 @@ import FilterComponent from "../components/FilterComponent";
 const HomePage = () => {
   return (
     <div className="bg-black text-white scroll-smooth" id="top">
-      <NavBar />
+      {/* <NavBar /> */}
+      <NewNavbar />
       <section className="relative">
         <div className="relative">
           <img
