@@ -128,7 +128,7 @@ export const NewNavbar = () => {
           </div>
         </div>
         <div
-          // className={`md:hidden ${isOpen ? "block" : "hidden"} fixed inset-0 z-50 bg-black bg-opacity-50`}
+          className={`md:hidden ${isOpen ? "block" : "hidden"} fixed inset-0 z-50 bg-black bg-opacity-50`}
           onClick={toggleMenu}
         ></div>
         <div
@@ -155,7 +155,7 @@ export const NewNavbar = () => {
               </button>
             </div>
             {/* Your mobile navigation links here */}
-            <div>
+            <div className="text-center flex flex-col items-center mt-56 gap-10">
               <a
                 href="#services"
                 className="hover:underline hover:text-[#FE5C43]"
