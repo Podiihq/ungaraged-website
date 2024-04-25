@@ -509,10 +509,9 @@ const HomePage = () => {
             </div>
             <div className="mt-4 text-center">
               <p className="lg:w-1/2 mx-auto text-[#141414] text-sm md:text-base">
-                From navigating international regulations to arranging safe and
-                efficient transport, we handle every step of the import process,
-                so you can focus on enjoying your new ride. Let us turn your
-                global automotive aspirations into reality, one import at a time
+                Redefine your driving experience. Our services empower you to
+                push beyond limits. From tuning to importing, trust us to
+                elevate your ride.
               </p>
             </div>
           </div>
