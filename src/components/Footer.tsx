@@ -34,7 +34,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="py-2 text-center lg:text-left text-[#ABABAB]">
-              Phone: +254 726691812
+              Phone: 0726691812
             </p>
           </div>
           <div className="mt-4 lg:mt-0">

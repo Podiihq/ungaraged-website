@@ -20,7 +20,7 @@ const ContactPage = () => {
                         <p className="text-4xl font-bold lg:text-6xl hero2 text-center lg:text-left">Let's Talk</p>
                         <div className="my-8">
                             <p className="text-center lg:text-left text-[#ABABAB]">Email: <a href="mailto:ungaraged@gmail.com" className="underline">ungaraged(at)gmail.com</a></p>
-                            <p className="py-2 text-center lg:text-left text-[#ABABAB]">Phone: +254 726691812</p>
+                            <p className="py-2 text-center lg:text-left text-[#ABABAB]">Phone: 0726691812</p>
                         </div>
 
                         <div className="grid md:grid-cols-3 lg:grid-cols-1 items-center">
