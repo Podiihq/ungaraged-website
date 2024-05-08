@@ -1,3 +1,118 @@
+import React, { useState, useEffect } from "react";
+
+const FilterComponent: React.FC = () => {
+  const [carData, setCarData] = useState<any[]>([]);
+  const [selectedType, setSelectedType] = useState<string>("");
+  const [selectedModel, setSelectedModel] = useState<string>("");
+
+  useEffect(() => {
+    fetch("/src/carData.json")
+      .then(response => response.json())
+      .then(data => setCarData(data))
+      .catch(error => console.error("Error fetching car data:", error));
+  }, []);
+
+  const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedType(event.target.value);
+    setSelectedModel("");
+  };
+
+  const handleModelChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedModel(event.target.value);
+  };
+
+  const carTypes = carData.map((carType) => carType.type);
+  const filteredModels = selectedType
+    ? carData.find((carType) => carType.type === selectedType)?.models || []
+    : [];
+
+  const selectedModelData = selectedModel
+    ? filteredModels.find((model: { name: string; }) => model.name === selectedModel)
+    : undefined;
+
+  return (
+    <div className="container mx-auto mt-8 bg-[#141414] p-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div>
+          <label htmlFor="carType" className="block font-medium">
+            Select Car Type:
+          </label>
+          <select
+            id="carType"
+            className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
+            onChange={handleTypeChange}
+            value={selectedType}
+          >
+            <option value="">Select</option>
+            {carTypes.map((carType) => (
+              <option key={carType} value={carType}>
+                {carType}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label htmlFor="carModel" className="block font-medium">
+            Select Car Model:
+          </label>
+          <select
+            id="carModel"
+            className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
+            onChange={handleModelChange}
+            value={selectedModel}
+            disabled={!selectedType}
+          >
+            <option value="">Select</option>
+            {filteredModels.map((model: { name: string; }) => (
+              <option key={model.name} value={model.name}>
+                {model.name}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div>
+        {selectedModelData && (
+          <div className="mt-8 flex gap-10 md:gap-20">
+            <div>
+              <h2 className="text-xl font-medium">
+                Tuning Levels for {selectedModelData.name}
+              </h2>
+              <ul className="mt-4 space-y-2 text-[#ABABAB]">
+                {selectedModelData.tuningLevels.map((level: any) => (
+                  <li key={level.name}>
+                    <span className="font-medium">{level.name}:</span>{" "}
+                    {level.power}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="">
+              <h2 className="text-xl font-medium">Compatible Models</h2>
+              <ul className="mt-2 space-y-2 text-[#ABABAB]">
+                {selectedModelData.compatibleModels.map((model: string) => (
+                  <li key={model}>{model}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default FilterComponent;
+
+
+
+
+
+
+
+
+
+
 // import React, { useState } from "react";
 
 // const FilterComponent: React.FC = () => {
@@ -268,110 +383,3 @@
 // };
 
 // export default FilterComponent;
-
-import React, { useState, useEffect } from "react";
-
-const FilterComponent: React.FC = () => {
-  const [carData, setCarData] = useState<any[]>([]);
-  const [selectedType, setSelectedType] = useState<string>("");
-  const [selectedModel, setSelectedModel] = useState<string>("");
-
-  useEffect(() => {
-    fetch("/src/carData.json")
-      .then(response => response.json())
-      .then(data => setCarData(data))
-      .catch(error => console.error("Error fetching car data:", error));
-  }, []);
-
-  const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedType(event.target.value);
-    setSelectedModel("");
-  };
-
-  const handleModelChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedModel(event.target.value);
-  };
-
-  const carTypes = carData.map((carType) => carType.type);
-  const filteredModels = selectedType
-    ? carData.find((carType) => carType.type === selectedType)?.models || []
-    : [];
-
-  const selectedModelData = selectedModel
-    ? filteredModels.find((model: { name: string; }) => model.name === selectedModel)
-    : undefined;
-
-  return (
-    <div className="container mx-auto mt-8 bg-[#141414] p-6">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div>
-          <label htmlFor="carType" className="block font-medium">
-            Select Car Type:
-          </label>
-          <select
-            id="carType"
-            className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
-            onChange={handleTypeChange}
-            value={selectedType}
-          >
-            <option value="">Select</option>
-            {carTypes.map((carType) => (
-              <option key={carType} value={carType}>
-                {carType}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div>
-          <label htmlFor="carModel" className="block font-medium">
-            Select Car Model:
-          </label>
-          <select
-            id="carModel"
-            className="mt-2 block w-full border border-[#3C3C3C] bg-[#141414] px-2 py-2 italic"
-            onChange={handleModelChange}
-            value={selectedModel}
-            disabled={!selectedType}
-          >
-            <option value="">Select</option>
-            {filteredModels.map((model: { name: string; }) => (
-              <option key={model.name} value={model.name}>
-                {model.name}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-      <div>
-        {selectedModelData && (
-          <div className="mt-8 flex gap-10 md:gap-20">
-            <div>
-              <h2 className="text-xl font-medium">
-                Tuning Levels for {selectedModelData.name}
-              </h2>
-              <ul className="mt-4 space-y-2 text-[#ABABAB]">
-                {selectedModelData.tuningLevels.map((level: any) => (
-                  <li key={level.name}>
-                    <span className="font-medium">{level.name}:</span>{" "}
-                    {level.power}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="">
-              <h2 className="text-xl font-medium">Compatible Models</h2>
-              <ul className="mt-2 space-y-2 text-[#ABABAB]">
-                {selectedModelData.compatibleModels.map((model: string) => (
-                  <li key={model}>{model}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-export default FilterComponent;
-
