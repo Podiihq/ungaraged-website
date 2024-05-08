@@ -6,7 +6,7 @@ const FilterComponent: React.FC = () => {
   const [selectedModel, setSelectedModel] = useState<string>("");
 
   useEffect(() => {
-    fetch("/src/carData.json")
+    fetch("../../src/carData.json")
       .then(response => response.json())
       .then(data => setCarData(data))
       .catch(error => console.error("Error fetching car data:", error));
