@@ -5,9 +5,20 @@ const FilterComponent: React.FC = () => {
   const [selectedType, setSelectedType] = useState<string>("");
   const [selectedModel, setSelectedModel] = useState<string>("");
 
+  // useEffect(() => {
+  //   fetch("/src/carData.json")
+  //     .then(response => response.json())
+  //     .then(data => setCarData(data))
+  //     .catch(error => console.error("Error fetching car data:", error));
+  // }, []);
   useEffect(() => {
-    fetch("../../src/carData.json")
-      .then(response => response.json())
+    fetch("/src/carData.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
       .then(data => setCarData(data))
       .catch(error => console.error("Error fetching car data:", error));
   }, []);
