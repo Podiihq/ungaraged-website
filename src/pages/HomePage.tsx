@@ -26,7 +26,6 @@ import FilterComponent from "../components/FilterComponent";
 const HomePage = () => {
   return (
     <div className="bg-black text-white scroll-smooth" id="top">
-      {/* <NavBar /> */}
       <NewNavbar />
       <section className="relative">
         <div className="relative">
