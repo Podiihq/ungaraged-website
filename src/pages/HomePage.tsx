@@ -83,11 +83,6 @@ const HomePage = () => {
       <section className="">
         <div className="">
           <video autoPlay muted loop src={HeroVideo} className="w-full"></video>
-          {/* <div className="flex max-w-screen">
-                        <video autoPlay muted loop src={HeroVideo2} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
-                        <video autoPlay muted loop src={HeroVideo3} className="w-full h-[340px] md:h-[510px] lg:h-[850px] xl:h-full"></video>
-                    </div> */}
-          {/* <video autoPlay muted loop src={HeroVideo2} className="w-full"></video> */}
         </div>
       </section>
 
