@@ -256,7 +256,7 @@
                 ]
             },
             {
-                "name": "2.0 TSI EA888 Gen 3 IS20 MQB",
+                "name": "2.0 TSI EA888 Gen 3 IS20",
                 "compatibleModels": [
                     "MK7 & MK7.5",
                     "GTI",
@@ -282,7 +282,7 @@
                 ]
             },
             {
-                "name": "2.0 TSI EA888 Gen 3 IS38 MQB",
+                "name": "2.0 TSI EA888 Gen 3 IS38",
                 "compatibleModels": [
                     "MK7",
                     "Golf R"
@@ -331,7 +331,7 @@
                 ]
             },
             {
-                "name": "1.4 TSI EA211 MQB",
+                "name": "1.4 TSI EA211",
                 "compatibleModels": [
                     "Mk7/Mk7.5 Golf",
                     "Mk2 Tiguan "
@@ -636,7 +636,7 @@
                 ]
             },
             {
-                "name": "2.0 TSI EA888 Gen 3 IS20 MQB",
+                "name": "2.0 TSI EA888 Gen 3 IS20",
                 "compatibleModels": [
                     "MK7/MK7.5",
                     "GTI",
@@ -662,7 +662,7 @@
                 ]
             },
             {
-                "name": "2.0 TSI EA888 Gen 3 IS38 MQB",
+                "name": "2.0 TSI EA888 Gen 3 IS38",
                 "compatibleModels": [
                     "MK7",
                     "Golf R"
@@ -711,7 +711,7 @@
                 ]
             },
             {
-                "name": "1.4 TSI EA211 MQB",
+                "name": "1.4 TSI EA211",
                 "compatibleModels": [
                     "Mk7 & Mk7.5 Golf",
                     "Mk2 Tiguan "
