@@ -65,15 +65,15 @@
                         "power": "400HP / 480NM"
                     },
                     {
-                        "name": "Stage 2 Dual Pulley",
+                        "name": "Stage 2",
                         "power": "420HP / 500NM"
                     },
                     {
-                        "name": "Stage 2+ Throttle Body",
+                        "name": "Stage 2+",
                         "power": "455HP / 550NM"
                     },
                     {
-                        "name": "Stage 3 Ported Supercharger",
+                        "name": "Stage 3",
                         "power": "495HP / 600NM"
                     }
                 ]
