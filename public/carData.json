@@ -333,7 +333,7 @@
             {
                 "name": "1.4 TSI EA211",
                 "compatibleModels": [
-                    "Mk7/Mk7.5 Golf",
+                    "Mk7 & Mk7.5 Golf",
                     "Mk2 Tiguan "
                 ],
                 "tuningLevels": [
@@ -343,7 +343,7 @@
                     },
                     {
                         "name": "Stage 1",
-                        "power": "175HP /320NM"
+                        "power": "175HP / 320NM"
                     },
                     {
                         "name": "Stage 2",
