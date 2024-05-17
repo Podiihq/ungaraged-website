@@ -357,7 +357,7 @@
         "type": "BMW",
         "models": [
             {
-                "name": "4.4 S63",
+                "name": "4.4L S63",
                 "compatibleModels": [
                     "F-SERIES & G-SERIES"
                 ],
@@ -381,7 +381,7 @@
                 ]               
             },
             {
-                "name": "3.0 S58",
+                "name": "3.0L S58",
                 "compatibleModels": [
                     "F-SERIES & G-SERIES"
                 ],
@@ -405,7 +405,7 @@
                 ]
             },
             {
-                "name": "3.0 S55",
+                "name": "3.0L S55",
                 "compatibleModels": [
                     "F-SERIES"
                 ],
@@ -433,7 +433,7 @@
                 ]
             },
             {
-                "name": "3.0 B58 Gen1 & Gen2",
+                "name": "3.0L B58 Gen1 & Gen2",
                 "compatibleModels": [
                     "F-SERIES & G-SERIES"
                 ],
@@ -461,7 +461,7 @@
                 ]
             },
             {
-                "name": "3.0 N54",
+                "name": "3.0L N54",
                 "compatibleModels": [
                     "E-SERIES"
                 ],
@@ -481,7 +481,7 @@
                 ]
             },
             {
-                "name": "3.0 N55",
+                "name": "3.0L N55",
                 "compatibleModels": [
                     "F-SERIES"
                 ],
@@ -509,31 +509,27 @@
                 ]
             },
             {
-                "name": "2.0 N20",
+                "name": "2.0L N20 & N26",
                 "compatibleModels": [
                     "F-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "265HP / 350NM"
+                        "power": "154-241HP / 310NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "320HP / 480NM"
+                        "power": "260HP / 420NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "370HP / 550NM"
-                    },
-                    {
-                        "name": "Stage 3 K04 Hybrid",
-                        "power": "450HP / 600NM"
+                        "power": "280HP / 440NM"
                     }
                 ]
             },
             {
-                "name": "1.6 N13",
+                "name": "1.6L N13",
                 "compatibleModels": [
                     "F-SERIES"
                 ],
