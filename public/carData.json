@@ -3,7 +3,53 @@
         "type": "Audi",
         "models": [
             {
-                "name": "3.0 TFSI Supercharged",
+                "name": "4.0T EA824",
+                "compatibleModels": [
+                    "C7 & C7.5 S6 S7 RS6 RS7",
+                    "D4 S8"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "450-600HP / 700NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "570HP / 850NM"
+                    },
+                    {
+                        "name": "Stage 1 RS Turbos",
+                        "power": "670HP / 950NM"
+                    },
+                    {
+                        "name": "Stage 2 RS Turbos",
+                        "power": "700HP / 1000NM"
+                    },
+                    {
+                        "name": "Stage 2+ Hybrid Turbos",
+                        "power": "850HP / 1100NM"
+                    }
+                ]
+            },
+            {
+                "name": "4.0T EA825",
+                "compatibleModels": [
+                    "C8 RS6, RS7, S8, SQ7, SQ8, RSQ8",
+                    "D5 S8"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "450-600HP / 800NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "700HP / 1000NM"
+                    }
+                ]
+            },
+            {
+                "name": "3.0T EA837 Supercharged",
                 "compatibleModels": [
                     "B8/B8.5 S4 S5",
                     "C7 A6 A7",
@@ -12,50 +58,251 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "333bhp/440nm"
+                        "power": "333HP / 440NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "400bhp/480nm"
+                        "power": "400HP / 480NM"
                     },
                     {
-                        "name": "Stage 1 SP",
-                        "power": "420bhp/500nm"
+                        "name": "Stage 2 Dual Pulley",
+                        "power": "420HP / 500NM"
                     },
                     {
-                        "name": "Stage 2 DP",
-                        "power": "455bhp/550nm"
+                        "name": "Stage 2+ Throttle Body",
+                        "power": "455HP / 550NM"
                     },
                     {
-                        "name": "Stage 2+",
-                        "power": "495bhp/600nm"
+                        "name": "Stage 3 Ported Supercharger",
+                        "power": "495HP / 600NM"
                     }
                 ]
             },
             {
-                "name": "2.0 TSI EA888 Gen 1 & 2",
+                "name": "3.0T EA839",
                 "compatibleModels": [
-                    "B8/B8.5 A4 A5",
-                    "8R Q5",
-                    "C7 A6",
-                    "B8/B8.5 Allroad"
+                    "B9/B9.5 S4 S5 SQ5",
+                    "C8 A6 A7"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "210bhp/350nm"
+                        "power": "350HP / 500NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "270bhp/380nm"
+                        "power": "425HP / 620NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "285bhp/400nm"
+                        "power": "445HP / 650NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "620HP / 850NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.9T EA839",
+                "compatibleModels": [
+                    "B9/B9.5 RS4 RS5"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "444HP / 600NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "500HP / 750NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "520HP / 780NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "600HP / 850NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.5 TSI EA855",
+                "compatibleModels": [
+                    "8V RS3",
+                    "8J TTRS"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "367HP / 465NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "400HP / 600NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "420HP / 640NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "500HP / 670NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.5 TFSI EA855 EVO",
+                "compatibleModels": [
+                    "8V.1 RS3",
+                    "8S TTRS"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "394HP / 480NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "470HP / 640NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "510HP / 680NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "650HP / 750NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TFSI EA113",
+                "compatibleModels": [
+                    "MK5 GTI",
+                    "Jetta",
+                    "GLI",
+                    "B6 Passat"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "200HP / 280NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "260HP/350NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "275HP / 380NM"
                     },
                     {
                         "name": "Stage 3 K04",
-                        "power": "370bhp/550nm"
+                        "power": "370HP / 550NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TFSI EA113 K04",
+                "compatibleModels": [
+                    "MK5 Golf",
+                    "Mk6 R"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "265HP / 350NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "320HP / 480NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "370HP / 550NM"
+                    },
+                    {
+                        "name": "Stage 3 K04 Hybrid",
+                        "power": "450HP / 600NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TSI EA888 Gen1 & Gen2",
+                "compatibleModels": [
+                    "For 2015+ - MK7 Golf",
+                    "Sportwagen",
+                    " Alltrak"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "180HP / 250NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "230HP / 380NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "250HP / 400NM"
+                    },
+                    {
+                        "name": "Stage 3 IS38",
+                        "power": "370HP / 440NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TSI EA888 Gen 3 IS20 MQB",
+                "compatibleModels": [
+                    "MK7 & MK7.5",
+                    "GTI",
+                    "GLI"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "220HP / 350NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "300HP / 450NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "330HP / 500NM"
+                    },
+                    {
+                        "name": "Stage 3 IS38",
+                        "power": "410HP / 550NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TSI EA888 Gen 3 IS38 MQB",
+                "compatibleModels": [
+                    "MK7",
+                    "Golf R"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "290HP / 380NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "370HP / 500NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "410HP / 550NM"
+                    },
+                    {
+                        "name": "Stage 3 IS38 Hybrid",
+                        "power": "500HP / 600NM"
                     }
                 ]
             },
@@ -67,142 +314,40 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "180bhp/250nm"
+                        "power": "180HP / 250NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "230bhp/380nm"
+                        "power": "230HP / 380NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "250bhp/400nm"
+                        "power": "250HP / 400NM"
                     },
                     {
                         "name": "Stage 3 IS38",
-                        "power": "370bhp/440nm"
-                    }
-                ]
-            },
-            {
-                "name": "2.0 TSI EA888 Gen 3 IS20 MQB",
-                "compatibleModels": [
-                    "8S TT",
-                    "8V A3"
-                ],
-                "tuningLevels": [
-                    {
-                        "name": "Stock",
-                        "power": "220bhp/350nm"
-                    },
-                    {
-                        "name": "Stage 1",
-                        "power": "300bhp/450nm"
-                    },
-                    {
-                        "name": "Stage 2",
-                        "power": "330bhp/500nm"
-                    },
-                    {
-                        "name": "Stage 3 IS38",
-                        "power": "410bhp/550nm"
-                    }
-                ]
-            },
-            {
-                "name": "2.0 TSI EA888 Gen 3 IS38 MQB",
-                "compatibleModels": [
-                    "8V S3",
-                    "8S TTS"
-                ],
-                "tuningLevels": [
-                    {
-                        "name": "Stock",
-                        "power": "290bhp/380nm"
-                    },
-                    {
-                        "name": "Stage 1",
-                        "power": "370bhp/500nm"
-                    },
-                    {
-                        "name": "Stage 2",
-                        "power": "410bhp/550nm"
-                    },
-                    {
-                        "name": "Stage 3 IS38 Hybrid",
-                        "power": "500bhp/600nm"
-                    }
-                ]
-            },
-            {
-                "name": "2.0 TFSI EA113",
-                "compatibleModels": [
-                    "8P",
-                    "TT",
-                    "8J",
-                    "A3"
-                ],
-                "tuningLevels": [
-                    {
-                        "name": "Stock",
-                        "power": "200bhp/280nm"
-                    },
-                    {
-                        "name": "Stage 1",
-                        "power": "260bhp/350nm"
-                    },
-                    {
-                        "name": "Stage 2",
-                        "power": "275bhp/380nm"
-                    },
-                    {
-                        "name": "Stage 3 K04",
-                        "power": "370bhp/550nm"
-                    }
-                ]
-            },
-            {
-                "name": "2.0 TFSI EA113 KO4",
-                "compatibleModels": [
-                    "8P S3",
-                    "8J TTS"
-                ],
-                "tuningLevels": [
-                    {
-                        "name": "Stock",
-                        "power": "265bhp/350nm"
-                    },
-                    {
-                        "name": "Stage 1",
-                        "power": "320bhp/480nm"
-                    },
-                    {
-                        "name": "Stage 2",
-                        "power": "370bhp/550nm"
-                    },
-                    {
-                        "name": "Stage 3 K04 Hybrid",
-                        "power": "450bhp/600nm"
+                        "power": "370HP / 440NM"
                     }
                 ]
             },
             {
                 "name": "1.4 TSI EA211 MQB",
                 "compatibleModels": [
-                    "8V",
-                    "A3"
+                    "Mk7/Mk7.5 Golf",
+                    "Mk2 Tiguan "
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "140bhp/250nm"
+                        "power": "140HP / 250NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "175bhp/320nm"
+                        "power": "175HP /320NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "195bhp/350nm"
+                        "power": "195HP / 350NM"
                     }
                 ]
             }
@@ -214,204 +359,196 @@
             {
                 "name": "4.4 S63",
                 "compatibleModels": [
-                    "B8/B8.5 S4 S5",
-                    "C7 A6 A7",
-                    "8R Q5 SQ5"
+                    "F-SERIES & G-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "333bhp/440nm"
+                        "power": "600HP / 620NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "400bhp/480nm"
+                        "power": "720HP / 900NM"
                     },
                     {
-                        "name": "Stage 1 SP",
-                        "power": "420bhp/500nm"
+                        "name": "Stage 2",
+                        "power": "780HP / 950NM"
                     },
                     {
-                        "name": "Stage 2 DP",
-                        "power": "455bhp/550nm"
-                    },
-                    {
-                        "name": "Stage 2+",
-                        "power": "495bhp/600nm"
+                        "name": "Stage 3",
+                        "power": "850HP / 1100NM"
                     }
-                ]
+                ]               
             },
             {
                 "name": "3.0 S58",
                 "compatibleModels": [
-                    "B8/B8.5 A4 A5",
-                    "8R Q5",
-                    "C7 A6",
-                    "B8/B8.5 Allroad"
+                    "F-SERIES & G-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "210bhp/350nm"
+                        "power": "480HP / 600NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "270bhp/380nm"
+                        "power": "630HP / 750NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "285bhp/400nm"
+                        "power": "700HP / 850NM"
                     },
                     {
-                        "name": "Stage 3 K04",
-                        "power": "370bhp/550nm"
+                        "name": "Stage 3",
+                        "power": "850HP / 1100NM"
                     }
                 ]
             },
             {
                 "name": "3.0 S55",
                 "compatibleModels": [
-                    "8V A3"
+                    "F-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "180bhp/250nm"
+                        "power": "431-500HP / 550NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "230bhp/380nm"
+                        "power": "530HP / 700NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "250bhp/400nm"
+                        "power": "560HP / 780NM"
                     },
                     {
-                        "name": "Stage 3 IS38",
-                        "power": "370bhp/440nm"
+                        "name": "Stage 2+",
+                        "power": "575HP / 850NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "800HP / 1000NM"
                     }
                 ]
             },
             {
-                "name": "3.0 B58 Gen1",
+                "name": "3.0 B58 Gen1/Gen2",
                 "compatibleModels": [
-                    "8S TT",
-                    "8V A3"
+                    "F-SERIES & G-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "220bhp/350nm"
+                        "power": "326-360HP / 450NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "300bhp/450nm"
+                        "power": "420HP / 580NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "330bhp/500nm"
+                        "power": "470HP / 630NM"
                     },
                     {
-                        "name": "Stage 3 IS38",
-                        "power": "410bhp/550nm"
+                        "name": "Stage 2+",
+                        "power": "500HP / 720NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "650HP / 850NM"
                     }
                 ]
             },
             {
-                "name": "3.0 B58 Gen2",
+                "name": "3.0 N54",
                 "compatibleModels": [
-                    "8V S3",
-                    "8S TTS"
+                    "E-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "290bhp/380nm"
+                        "power": "306-340HP / 450NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "370bhp/500nm"
+                        "power": "390HP / 600NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "410bhp/550nm"
-                    },
-                    {
-                        "name": "Stage 3 IS38 Hybrid",
-                        "power": "500bhp/600nm"
+                        "power": "420HP / 650NM"
                     }
                 ]
             },
             {
                 "name": "3.0 N55",
                 "compatibleModels": [
-                    "8P",
-                    "TT",
-                    "8J",
-                    "A3"
+                    "F-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "200bhp/280nm"
+                        "power": "306-360HP / 450NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "260bhp/350nm"
+                        "power": "370HP / 520NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "275bhp/380nm"
+                        "power": "400HP / 580NM"
                     },
                     {
-                        "name": "Stage 3 K04",
-                        "power": "370bhp/550nm"
+                        "name": "Stage 2+",
+                        "power": "440HP / 650NM"
+                    },
+                    {
+                        "name": "Stage 3",
+                        "power": "550HP / 800NM"
                     }
                 ]
             },
             {
                 "name": "2.0 N20",
                 "compatibleModels": [
-                    "8P S3",
-                    "8J TTS"
+                    "F-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "265bhp/350nm"
+                        "power": "265HP / 350NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "320bhp/480nm"
+                        "power": "320HP / 480NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "370bhp/550nm"
+                        "power": "370HP / 550NM"
                     },
                     {
                         "name": "Stage 3 K04 Hybrid",
-                        "power": "450bhp/600nm"
+                        "power": "450HP / 600NM"
                     }
                 ]
             },
             {
                 "name": "1.6 N13",
                 "compatibleModels": [
-                    "8V",
-                    "A3"
+                    "F-SERIES"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "140bhp/250nm"
+                        "power": "102HP / 177NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "175bhp/320nm"
+                        "power": "200HP / 280NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "195bhp/350nm"
+                        "power": "235HP / 350NM"
                     }
                 ]
             }
@@ -431,24 +568,49 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "200bhp/280nm"
+                        "power": "200HP / 280NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "260bhp/350nm"
+                        "power": "260HP / 350NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "275bhp/380nm"
+                        "power": "275HP / 380NM"
                     },
                     {
                         "name": "Stage 3 K04",
-                        "power": "370bhp/550nm"
+                        "power": "370HP / 550NM"
                     }
                 ]
             },
             {
-                "name": "1.8 TSI EA888 Gen 3 IS12",
+                "name": "2.0 TFSI EA113 K04",
+                "compatibleModels": [
+                    "MK5",
+                    "Golf R"
+                ],
+                "tuningLevels": [
+                    {
+                        "name": "Stock",
+                        "power": "265HP / 350NM"
+                    },
+                    {
+                        "name": "Stage 1",
+                        "power": "320HP / 480NM"
+                    },
+                    {
+                        "name": "Stage 2",
+                        "power": "370HP / 550NM"
+                    },
+                    {
+                        "name": "Stage 3 K04 Hybrid",
+                        "power": "450HP / 600NM"
+                    }
+                ]
+            },
+            {
+                "name": "2.0 TSI EA888 Gen2",
                 "compatibleModels": [
                     "For 2015+ - MK7 Golf",
                     "Sportwagen",
@@ -457,19 +619,19 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "180bhp/250nm"
+                        "power": "180HP / 250NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "230bhp/380nm"
+                        "power": "230HP / 380NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "250bhp/400nm"
+                        "power": "250HP / 400NM"
                     },
                     {
                         "name": "Stage 3 IS38",
-                        "power": "370bhp/440nm"
+                        "power": "370HP / 440NM"
                     }
                 ]
             },
@@ -483,19 +645,19 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "220bhp/350nm"
+                        "power": "220HP / 350NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "300bhp/450nm"
+                        "power": "300HP / 450NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "330bhp/500nm"
+                        "power": "330HP / 500NM"
                     },
                     {
                         "name": "Stage 3 IS38",
-                        "power": "410bhp/550nm"
+                        "power": "410HP / 550NM"
                     }
                 ]
             },
@@ -508,65 +670,64 @@
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "290bhp/380nm"
+                        "power": "290HP / 380NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "370bhp/500nm"
+                        "power": "370HP / 500NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "410bhp/550nm"
+                        "power": "410HP / 550NM"
                     },
                     {
                         "name": "Stage 3 IS38 Hybrid",
-                        "power": "500bhp/600nm"
+                        "power": "500HP / 600NM"
                     }
                 ]
             },
             {
-                "name": "2.0 TFSI EA113 K04",
+                "name": "1.8 TSI EA888 Gen 3 IS12",
                 "compatibleModels": [
-                    "MK5",
-                    "Golf R"
+                    "8V A3"
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "265bhp/350nm"
+                        "power": "180HP / 250NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "320bhp/480nm"
+                        "power": "230HP / 380NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "370bhp/550nm"
+                        "power": "250HP / 400NM"
                     },
                     {
-                        "name": "Stage 3 K04 Hybrid",
-                        "power": "450bhp/600nm"
+                        "name": "Stage 3 IS38",
+                        "power": "370HP / 440NM"
                     }
                 ]
             },
             {
                 "name": "1.4 TSI EA211 MQB",
                 "compatibleModels": [
-                    "MK7/MK7.5",
-                    "Golf"
+                    "Mk7 & Mk7.5 Golf",
+                    "Mk2 Tiguan "
                 ],
                 "tuningLevels": [
                     {
                         "name": "Stock",
-                        "power": "140bhp/250nm"
+                        "power": "140HP / 250NM"
                     },
                     {
                         "name": "Stage 1",
-                        "power": "175bhp/320nm"
+                        "power": "175HP / 320NM"
                     },
                     {
                         "name": "Stage 2",
-                        "power": "195bhp/350nm"
+                        "power": "195HP / 350NM"
                     }
                 ]
             }
