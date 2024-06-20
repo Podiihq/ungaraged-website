@@ -69,7 +69,7 @@ const Footer = () => {
           Copyright Ungaraged 2024 || All Rights Reserved
         </p>
         <p className="text-center text-xs mt-2">
-          Designed and Developed by
+          Crafted
           <br />{" "}
           <a href="https://podiihq.com/" className="underline">
             Podii Consultants LTD.
