@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/Logo/Logo.svg";
 import { SearchIcon } from "./Icons";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -67,9 +68,11 @@ export const NewNavbar = () => {
         <div className="">
           <div className="flex items-center justify-between w-full">
             <div className="flex items-center justify-between w-full">
-              <div className="flex-shrink-0">
-                <img src={Logo} alt="" className="w-32 lg:w-auto" />
-              </div>
+              <Link to="/">
+                <div className="flex-shrink-0">
+                  <img src={Logo} alt="" className="w-32 lg:w-auto" />
+                </div>
+              </Link>
               <div className="hidden md:flex gap-4">
                 {/* Your desktop navigation links here */}
                 <a

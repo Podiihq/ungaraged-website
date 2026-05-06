@@ -261,7 +261,9 @@ const HomePage = () => {
             Power
           </p>
           <img src={Star} alt="" />
-          <p className="text-7xl lg:text-9xl  font-[900] uppercase italic font-outline-2 hover:font-outline-4 text-transparent ">
+          <p
+            style={{ WebkitTextStroke: "1px white" }}
+            className="text-7xl lg:text-9xl  font-[900] uppercase italic text-transparent ">
             Performance
           </p>
           <img src={Star} alt="" />

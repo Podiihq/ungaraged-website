@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo/Logo.svg";
 import { Facebook, Instagram, Twitter } from "./Icons";
 
@@ -9,8 +10,8 @@ const Footer = () => {
           <div className="flex justify-center lg:block mb-4">
             <img src={Logo} alt="" />
           </div>
-          <div className="py-4">
-            <p className="font-bold lg:mb-4 text-center">Home Link</p>
+          <div>
+            <p className="font-bold lg:mb-4 text-center lg:text-left">Home Link</p>
             <div className="flex justify-center lg:flex-col gap-4 lg:gap-0 text-[#ABABAB]">
               <a href="#top" className="hover:underline">
                 Top
@@ -21,6 +22,11 @@ const Footer = () => {
               <a href="#about" className="hover:underline">
                 About Us
               </a>
+              <div className="hover:underline lg:pt-3">
+                <Link to="/privacy-policy">
+                  <p>Privacy Policy</p>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="mt-4 lg:mt-0">
@@ -65,16 +71,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-2 bg-[#FE5C43]">
-        <p className="text-center text-xs">
-          Copyright Ungaraged 2024 || All Rights Reserved
-        </p>
-        <p className="text-center text-xs mt-2">
-          Crafted By
-          <br />{" "}
-          <a href="https://podiihq.com/" className="underline">
-            Podii Consultants LTD.
-          </a>
-        </p>
+        <div className=" flex justify-between px-4 lg:max-w-screen-xl mx-auto items-center">
+          <p className="text-xs">
+            Copyright Ungaraged 2026 || All Rights Reserved
+          </p>
+          <p className="text-right text-xs mt-2">
+            Crafted By{" "}
+            <a href="https://podiihq.com/" className="underline hover:text-black">
+              Podii Consultants LTD.
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
