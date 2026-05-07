@@ -180,6 +180,12 @@ export const NewNavbar = () => {
               >
                 Contact Us
               </a>
+              <a
+                href="/privacy-policy"
+                className="hover:underline hover:text-[#FE5C43]"
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
